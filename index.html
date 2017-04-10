@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" author="Harshvardhan Pandey" description= "Tabbable Dashboards">
+    <head>
+    <title>Tabbable Dashboards</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <style type="text/css">
+        body {
+             font: 1.5em "Tahoma", san-serif;
+             color: #5bb800;
+             padding:1em;
+             background-color:#efffd4;
+            }
+
+        h1, h3{
+            text-align: center;
+            margin: 1em;}
+        
+        .tab-panels ul {
+                margin: 0;
+                padding: 0;
+                }
+
+        .tab-panels ul li {
+                list-style-type: none;
+                display: inline-block;
+                background: #885ead;
+                margin: 0;
+                padding: .5em .5em;
+                border-radius: .25em .25em 0 0;
+                color: #fff;
+                font-weight: 50;
+                cursor: pointer;}
+
+        .tab-panels ul li:hover {
+                color: #fff;
+                background: #ccbadc;}
+
+        .tab-panels ul li.active {
+                color: #11051b;
+                background: #bba3d0;}
+
+        .tab-panels .panel  {
+                display:none;
+                background: white;
+                width: 70vw;
+                height: 40vh;
+                color: black;
+                padding: 1em;
+                border-radius: 0 0.5em 0.5em 0.5em;
+                }
+
+        .tab-panels .panel.active {
+                display:block;
+                background: white;}
+        .tab-panels .panel.active:hover{
+                box-shadow: 0px 5px 25px 0.5px #7e77ad;
+        }
+
+        .chart {
+                transform: scale(0.9);}
+        
+        .chart:hover{
+                transform: scale(1.2);}
+
+    </style>
+    <body>
+        <div class="container-fluid">
+                    <H1><a href="http://www.harshvardhanpandey.com" alt="Go to website", target="_blank"><img class="img-thumbnail" src="assets/mycartoonface.jpg" height="250" width="150" alt="my face"></a><span class="hero-unit"> Harsh Pandey </span><H1> 
+                    <h3><span class="label label-success"> Live Dashboard </span></h3>
+                    <div class="row">
+
+            <div class="tab-panels col-xs-12">
+            <!-- creating tabs here -->
+                <ul class="tabs">
+                    <li rel="panel-1" class="active">Ek</li>
+                    <li rel="panel-2">Do</li>
+                    <li rel="panel-3">Teen</li>
+                    <li rel="panel-4">Char</li></ul>
+
+                <div id="panel-1" class="panel active">
+                    <span><p class="lead">EK</p>
+                    </span></div>
+                                            
+                <div id="panel-2" class="panel">
+                    <span class="chart">
+                    <p class="lead">Do</p>
+                    </span></div>
+
+                <div id="panel-3" class="panel">
+                    <span class="chart"><p class="lead">Teen</p>
+                    </span></div>
+
+                <div id="panel-4" class="panel">
+                <span class="chart"><p class="lead">Char</p>
+                    </span> </div>
+
+            </div> 
+            <!-- tab panels end here -->
+        </div> <!-- container ends here -->
+        
+    <script type="text/javascript">
+        $(document).ready(function() {
+                    
+                    // Step -1 : Create an event for click to each panel
+                    $('.tab-panels .tabs li').on('click', function(){ //$-1 starts
+                        $('.tab-panels .tabs .active').removeClass('active'); // removes active class from li that was clicked
+                        $(this).addClass('active'); // adding the active class to this so switching tabs would switch the active class to the current li that was clicked and remove active class from previous li
+                        var paneltoshow = $(this).attr('rel'); // storing and later on referencing li that was clicked using rel attribute. You can use anything else with say, data-yourIdname instead of rel. Upto you.
+
+                        //alert(paneltoshow);                           
+                        $('.tab-panels .panel.active').slideUp('100', function(){
+                            $(this).removeClass('active');                          //console.log(this);
+
+                            $('#'+paneltoshow).delay('300').slideDown(function () {
+                                $(this).addClass('active');                     //console.log(this);        
+                            });
+                        });
+
+                    }); //$-1 ends        
+                    });
+                /* ready ends here */
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
