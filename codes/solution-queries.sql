@@ -28,7 +28,7 @@ GROUP BY CARRIER, CANCELLED;
 -- Ans : EV, 727389, ExpressJet Airlines Inc.
 
 ---------------------------------------------
-3. What airport has the 10th longest delays? 
+-- 3. What airport has the 10th longest delays? 
 
 -- get the average delay time from all flights at their origin 
 SELECT 
