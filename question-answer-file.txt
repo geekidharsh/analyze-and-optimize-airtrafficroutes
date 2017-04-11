@@ -1,0 +1,16 @@
+1. What is the 15th most flown route? 
+Ans: Rank 15:  MCO 8868    Orlando, FL ATL 8868    Atlanta, GA
+
+---------------------------------------------
+2. What carrier has flown the 3rd most number of flights? How many? 
+Ans : EV, 727389, ExpressJet Airlines Inc.
+
+---------------------------------------------
+3. What airport has the 10th longest delays? 
+Ans: 10th  longest delay was observed at Redding Municipa Airport, Redding, CA
+
+---------------------------------------------
+4. What is the second most popular day of the week to travel? Why? 
+Ans: Monday with 935694.00 flights in total in 2013. 
+
+
