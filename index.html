@@ -10,16 +10,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     </head>
     <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300');
         body {
-             font: 1.5em "Tahoma", san-serif;
-             color: #003366;
+             font-family: 'Raleway', san-serif;
+             text-shadow: 0px 0px 1px #999999;             
              padding:1em;
-background: #0066CC;
+             background-color: #e8effc;
+background-image: url('../assets/blue-sky.jpg'); /*not working at this time*/
 }
 
-        h1, h3{
+        h1{
+              -webkit-font-smoothing: antialiased; 
+              -moz-osx-font-smoothing: grayscale;
             text-align: center;
-            margin: 1em;}
+            margin: 1em;
+            color: #1b61e4;
+            }
+        h5{
+            -webkit-font-smoothing: antialiased; 
+            -moz-osx-font-smoothing: grayscale;
+              margin: 1em;
+              text-decoration: none;
+               text-align: center;
+            color: #1b61e4;
+            text-shadow: 0px 0px 1px black;             
+
+        }
         
         .tab-panels ul {
                 margin: 0;
@@ -29,37 +45,38 @@ background: #0066CC;
         .tab-panels ul li {
                 list-style-type: none;
                 display: inline-block;
-                background: #008e00;
-                margin: 0;
-                padding: .5em .5em;
-                border-radius: .25em .25em 0 0;
+                background: #76a0ef;
+                margin: auto;
+                padding: .4em .4em;
+                border-radius: .20em .25em 0 0;
                 color: #fff;
                 font-weight: 50;
                 cursor: pointer;}
 
         .tab-panels ul li:hover {
-                color: #fff;
-                background: #7fe57f;}
+                color: #ffffff;
+                background: #1858cd;}
 
         .tab-panels ul li.active {
-                color: #003366;
-                background: #7fe57f;}
+                color: #ffffff;
+                background: #1858cd;}
 
         .tab-panels .panel  {
                 display:none;
                 background: white;
-                width: 70vw;
-                height: 100vh;
+                width: 80vw;
+                height: 120vh;
                 color: black;
                 padding: 1em;
-                border-radius: 0 0.5em 0.5em 0.5em;
+                border-radius: 0 0.25em 0.25em 0.5em;
                 }
 
         .tab-panels .panel.active {
                 display:block;
+                box-shadow: 0px 5px 10px 0px #bbd0f7;
                 background: white;}
         .tab-panels .panel.active:hover{
-                box-shadow: 0px 0px 10px 0px #006600;
+                box-shadow: 0px 0px 10px 0px #bbd0f7;
         }
 
         .chart {
@@ -68,11 +85,15 @@ background: #0066CC;
         .chart:hover{
                 transform: scale(1.2);}
 
+        #panel-2 {
+background: #e8effc;
+        }
+
     </style>
     <body>
         <div class="container-fluid">
                     <H1><span class="hero-unit"> Deliver The Best Flight </span><H1> 
-                    <h3><span class="label label-success"> Live Dashboard </span></h3>
+                    <h4><span class="label label-info">Interactive Dashboard Tabs</span></h4>
                     <div class="row">
 
             <div class="tab-panels col-xs-12">
@@ -87,23 +108,26 @@ background: #0066CC;
                     <span><p class="lead">Air traffic for 2013.</p>
                     </span><div class='tableauPlaceholder' id='viz1493093732089' style='position: relative'><noscript><a href='http:&#47;&#47;www.github.com&#47;geekidharsh'><img alt='Air Traffic from Transtat 2013 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirTrafficOptimization&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='AirTrafficOptimization&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirTrafficOptimization&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1493093732089');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='424px';vizElement.style.maxWidth='654px';vizElement.style.width='100%';vizElement.style.minHeight='629px';vizElement.style.maxHeight='929px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
                                             
-                <div id="panel-2" class="panel">
+                <div id="panel-2" class="panel other">
                     <span class="chart">
                     <p class="lead">Air Traffic Optimization</p>
                     </span> This is a second tab on this page.  </div>
-
-                <div id="panel-3" class="panel">
+<!-- not using here -->
+<!--                 <div id="panel-3" class="panel">
                     <span class="chart"><p class="lead">Teen</p>
                     </span></div>
 
                 <div id="panel-4" class="panel">
                 <span class="chart"><p class="lead">Char</p>
-                    </span> </div>
+ -->                    </span> </div>
 
             </div> 
             <!-- tab panels end here -->
         </div> <!-- container ends here -->
-        <footer><span class="hero-unit"><a href="http://www.harshvardhanpandey.com" alt="Go to website", target="_blank"><img class="img-thumbnail" src="assets/mycartoonface.jpg" width="50" alt="my face"></a> Harsh Pandey </span> </footer>
+        <footer><span class="hero-unit">
+            <a href="http://www.harshvardhanpandey.com" alt="Go to website", target="_blank"/>
+                <img class="img-thumbnail" src="assets/mycartoonface.jpg" width="70" alt="my face"></a>
+                <h5> Geekly built by <span class="label label-info"><a href="http://www.github.com/geekidharsh" alt="Go to website", target="_blank"/> @geekidharsh</span></h5></span> </footer>
         
     <script type="text/javascript">
         $(document).ready(function() {
