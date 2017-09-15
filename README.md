@@ -19,7 +19,7 @@ Goal of this case study was to evaluate Transtats Yearly data for a particular y
 * [codes](codes/) - sql and py scripts i wrote for wrangiling data.
 * [data](data/) - a sample of the dataset from TranStat. I've included first, last months and airline lookup files. More can be found [here](http://www.transtats.bts.gov/databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0)
 * presentation and reports
-* Dashboard - Built in js,html and css using embeded Tableau. Visit Project [Homepage](https://geekidharsh.github.io/AirTrafficOptimization/)
+* Optional Dashboard homepage- Built in javascript, html and css with embeded Tableau. Visit Project [Homepage](https://geekidharsh.github.io/AirTrafficOptimization/)
 
 #### Below is part of the report: 
 [Report](https://github.com/geekidharsh/AirTrafficOptimization/blob/master/presentation%20and%20reports/AirTrafficOptimization-case-presentation.pdf)
