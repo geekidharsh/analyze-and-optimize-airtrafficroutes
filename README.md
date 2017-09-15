@@ -20,4 +20,4 @@ This project includes the following contents:
 * Dashboard - Built in js,html and css using embeded Tableau. Visit [Home]
 
 #### Below is part of the report: 
-[Report](presentation and reports/AirTrafficOptimization-case-presentation.pdf)
+[Report](https://github.com/geekidharsh/AirTrafficOptimization/blob/master/presentation%20and%20reports/AirTrafficOptimization-case-presentation.pdf)
