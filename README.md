@@ -5,7 +5,7 @@ A Data mining and Analysis Case Study to Optimize best routes for a Top Flight C
 #### Goal: 
 Goal of this case study was to evaluate Transtats Yearly data for a particular year, mine it, create data models and answers business challenges, provide recommendations and more. 
 
---
+---
 
 #### Project Solution Layout:
 	- I used python to decompress raw data, build some cleaning functions using pandas. Next up, i pused the data on MySQL built models for it and ran queries to answer the questions provided.
@@ -14,7 +14,7 @@ Goal of this case study was to evaluate Transtats Yearly data for a particular y
 
 *This project includes the following contents:*
 
---
+---
 
 * [assets](assets/) - raw data and gathered data. 
 * [codes](codes/) - sql and py scripts i wrote for wrangiling data.
