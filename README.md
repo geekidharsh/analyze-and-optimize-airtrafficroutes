@@ -8,7 +8,7 @@ Goal: Goal of this case study was to evaluate Transtats Yearly data for a partic
 --
 
 ### Project Solution Layout:
-	- I used python to uncompress raw data, build some cleaning functions using pandas. Next up, i pused the data on MySQL built models for it and ran queries to answer the questions provided.
+	- I used python to decompress raw data, build some cleaning functions using pandas. Next up, i pused the data on MySQL built models for it and ran queries to answer the questions provided.
 	- I also gathered some data that wasn't provided, like some lookup datasets for flights and used join to map them to the original dataset in order to better understand the case. 
 	- I built a presentation for the entire study drawing inferences from the data and my learnings and better convey the story. Optionally, bult a little webpage using html5 and css and embeded Tableau viz. 
 
