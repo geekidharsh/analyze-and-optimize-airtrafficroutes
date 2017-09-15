@@ -14,7 +14,6 @@ Goal of this case study was to evaluate Transtats Yearly data for a particular y
 
 *This project includes the following contents:*
 
----
 
 * [assets](assets/) - raw data and gathered data. 
 * [codes](codes/) - sql and py scripts i wrote for wrangiling data.
