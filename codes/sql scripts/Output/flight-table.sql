@@ -1,4 +1,4 @@
-USE `seo_bluesite_db`;
+USE `test_db`;
 CREATE TABLE flight_data_table (
     s_no INT AUTO_INCREMENT NOT NULL,
     YR INT(5) NOT NULL,
